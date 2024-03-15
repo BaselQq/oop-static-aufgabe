@@ -2,10 +2,10 @@ package org.example;
 
 public class Calculator {
 
-    public static double sum;
-    public static double sub;
-    public static double mul;
-    public static double div;
+    private static int sum;
+    private static int sub;
+    private static int mul;
+    private static int div;
 
     public static void sumNumbers(int a, int b) {
         sum = a + b;
@@ -21,5 +21,21 @@ public class Calculator {
 
     public static void divNumbers(int a, int b) {
         div = a / b;
+    }
+
+    public static int getSum() {
+        return sum;
+    }
+
+    public static int getSub() {
+        return sub;
+    }
+
+    public static int getMul() {
+        return mul;
+    }
+
+    public static int getDiv() {
+        return div;
     }
 }
